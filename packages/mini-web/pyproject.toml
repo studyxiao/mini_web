@@ -1,7 +1,7 @@
 [project]
-name = "mini-test"
+name = "mini-web"
 version = "0.1.0"
-description = "Python 试验场"
+description = "一个简单的 Web 框架，使用 Python 编写"
 readme = "README.md"
 authors = [
     { name = "studyxiao", email = "studyxiao@163.com" }
@@ -9,5 +9,6 @@ authors = [
 requires-python = ">=3.11"
 dependencies = []
 
-[tool.uv.workspace]
-members = ["packages/*"]
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
