@@ -1,12 +1,18 @@
 version = 1
 revision = 1
-requires-python = ">=3.11"
+requires-python = ">=3.13"
 
 [manifest]
 members = [
+    "file-handle",
     "mini-test",
     "mini-web",
 ]
+
+[[package]]
+name = "file-handle"
+version = "0.1.0"
+source = { editable = "packages/file_handle" }
 
 [[package]]
 name = "mini-test"
